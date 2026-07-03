@@ -1,0 +1,30 @@
+{
+  "whale_address": "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36",
+
+  "my_capital_usd": 1000,
+
+  "mode": "paper",
+
+  "network": "mainnet",
+
+  "risk": {
+    "max_position_fraction": 0.25,
+    "min_viable_balance_usd": 100,
+    "max_signal_age_seconds": 3
+  },
+
+  "my_address": "",
+  "private_key_env": "HL_PRIVATE_KEY",
+
+  "_help": {
+    "whale_address": "the Hyperliquid wallet you are copying",
+    "my_capital_usd": "paper mode: your pretend starting money. live mode: informational only, real balance is read from your account",
+    "mode": "'paper' = simulated, no real money (START HERE). 'live' = real orders on your Hyperliquid account",
+    "network": "'mainnet' or 'testnet' (testnet = Hyperliquid's free practice environment, works with live mode)",
+    "max_position_fraction": "hard cap: never put more than this fraction of your money in one trade (0.25 = 25%)",
+    "min_viable_balance_usd": "if your balance drops below this, the bot stops opening new trades and alerts you",
+    "max_signal_age_seconds": "ignore whale trades we heard about too late",
+    "my_address": "live mode only: your Hyperliquid wallet address",
+    "private_key_env": "live mode only: NAME of the environment variable that holds your API wallet private key. Never write the key itself in this file."
+  }
+}
